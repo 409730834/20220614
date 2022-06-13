@@ -1,0 +1,83 @@
+/* *{border:solid}  */
+html,body
+{background-color:#5b80e5;width:100%;height:100%;display:flex;justify-content:center;align-items:center;}
+.box{width:500px;background:linear-gradient(120deg, white 70%, yellow 30%);;
+box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);transition:0.5s
+}
+.box:hover{
+box-shadow:5px 5px 60px rgba(0,0,0,0.4) ;transform:translate(-5px,-5px)
+}
+.a{color:initial;text-decoration:initial;}
+.top{height:600px;width:500px;background-image:url( https://i.imgur.com/1oIw9Zv.jpg);background-size:cover;position:relative}
+.top .name{letter-spacing:2px;color:#f4eded;border-color:#549b49;position:absolute;left:0px;bottom:0px;padding:5px 15px;font-size:50px;background:linear-gradient(transparent 0%, black 100%)}
+.smalltext{font-style:italic;font-size:30px;}
+.intro{top:50px;right:100px;width:50%}
+
+.tag{width:40px;
+height:170px;
+background-color: #e2dc5a;
+border-radius:5%;
+position: absolute;
+right:20px;
+bottom:150px;
+font-style:italic
+;font-size:25px;}
+.bottom{
+padding:10px 20px 20px 20px;
+}
+.bottom li{
+padding:5px 0px;
+}
+.bottom ul{
+list-style:none;
+padding-left:0;
+}
+.bottom h3{
+display:inline-block;
+}
+.buttons{
+margin-top:30px;
+}
+
+.buttons .btn{
+display: inline-block;
+border: solid 2px black;
+padding:10px 25px;
+letter-spacing:2px;
+}
+.btnNews{
+position:relative;left:-165px;font-size:1.4cm;top:60px;font-style: italic
+}
+.btnNews:hover{
+background-color:#897373
+}
+.btnWebsit{
+  background-color:#d86565;font-size:1cm;position:relative;top:-20px;font-style: italic}
+.btnWebsit:hover{
+background-color:#897373;
+}
+a{
+
+color: initial; /*讓超連結的連結顏色不會改變，維持原本文字的顏色(因為連結會改變文字顏色)*/
+
+text-decoration: initial;/*讓超連結的連結底線不出現，維持原本文字的樣式*/
+
+}
+.spinner{position:relative;width:150px;height:150px;border-radius:50%;left:300px}
+.spinner::before,
+.spinner:after{content:"";position: absolute;border-radius:inherit;
+}
+.spinner:before{width:100%;height:100%;background-image:linear-gradient(0deg,#ff00cc 0%,#333399 100%);-webkit-animation: spin .5s infinite linear;animation: spin .5s infinite linear;}
+.spinner:after{width:85%;height:85%;background-color:#151515;top:50%;left:50%;transform:translate(-50%,-50%)}
+@-webkit-keyframes spin { to{
+  transform:rotate(360deg);}}
+@keyframes spin { to{
+  transform:rotate(360deg);}}
+.top .phone{height:80px}
+.loader-wrapper{width:80px;height:80px;top:150px;position:relative;top:-600px;left:60px}
+.loader{box-sizing:border-box;width:100%;height:100%;border:10px solid #dbd630;border-top-color:#152a8a;border-bottom-color:#ab0526;border-radius:50%;-webkit-animation:rotate 5s linear infinite;animation:rotate 5s linear infinite;top:}
+.loader-inner{border-top-color:#d4ccd9;border-bottom-color:#501375;-webkit-animation-duration:2.5s;animation-duration:2.5s}
+@-webkit-keyframes rotate{0%{transform:scale(1)rotate(360deg);}50%{transform:scale(.8)rotate(-360deg)}}
+@keyframes rotate{0%{transform:scale(1)rotate(360deg);}50%{transform:scale(.8)rotate(-360deg)}}
+.phone{font-style: italic}
+.jesus{position:relative;left:-310px;top:130px;font-size:0.7cm;font-weight: 900;}
